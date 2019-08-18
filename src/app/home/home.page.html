@@ -5,6 +5,7 @@
     </ion-title>
   </ion-toolbar>
 </ion-header>
+
 <ion-content padding color="light">
   <div *ngIf="user != null">
     <h3>Bem vindo: {{ user.email }}</h3>
@@ -17,7 +18,6 @@
     <img src="../../assets/images/unip-logo.png" alt="">
     <br>
     <br>
-    <!-- <h3 style="text-align: center">Login / Cadastro</h3> -->
     <ion-item>
       <ion-label floating>
         <ion-icon name='person'>
@@ -35,7 +35,6 @@
     </ion-item>
     <br>
     <ion-button color="primary" expand="block" (click)="LoginComEmail()">Entrar</ion-button>
-    <ion-button color="primary" expand="block" (click)="cadastrarUsuario()" style="margin-top: 1rem">Cadastrar
-    </ion-button>
+    <ion-button color="primary" expand="block" [routerLink]="'/register/'" style="margin-top: 1rem">Cadastrar</ion-button>
   </div>
 </ion-content>
