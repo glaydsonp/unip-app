@@ -11,6 +11,8 @@ import * as firebase from 'firebase';
 })
 export class HomePage {
   public user: any;
+  // public usuario: any;
+
   @ViewChild('usuario', { static: false }) email;
   @ViewChild('senha', { static: false }) password;
 

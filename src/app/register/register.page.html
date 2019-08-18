@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar color="danger">
+  <ion-toolbar style="--background: #263A7F; --color: white">
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
@@ -9,33 +9,48 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding color="light">
+<ion-content padding style="--background: #263A7F; --color: white">
   <form #form="ngForm" (ngSubmit)="register(form)">
     <ion-grid>
       <ion-row color="primary" justify-content-center>
         <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+          <section>
+            <p>
+              <ion-item color="transparent">
+                <ion-input style="--color:white; border-bottom-color: white" name="nome" type="text" placeholder="Nome" ngModel required></ion-input>
+              </ion-item>
+            </p>
+            <p>
+              <ion-item color="transparent">
+                <ion-input style="--color:white; border-bottom-color: white" name="matricula" type="text" placeholder="Matrícula" ngModel required></ion-input>
+              </ion-item>
+            </p>
+            <p>
+              <ion-item color="transparent">
+                <ion-input style="--color:white; border-bottom-color: white" name="turma" type="text" placeholder="Turma (Ex: CC2P12)" ngModel required></ion-input>
+              </ion-item>
+            </p>
+            <p>
+              <ion-item color="transparent">
+                <ion-input style="--color:white; border-bottom-color: white" name="email" type="email" placeholder="seu@email.com" ngModel required></ion-input>
+              </ion-item>
+            </p>
+            <p>
+              <ion-item color="transparent">
+                <ion-input style="--color:white; border-bottom-color: white" name="password" type="password" placeholder="Senha" ngModel required></ion-input>
+              </ion-item>
+            </p>
+            <p>
+              <ion-item color="transparent">
+                <ion-input style="--color:white; border-bottom-color: white" name="confirm" type="password" placeholder="Confirme a senha" ngModel required></ion-input>
+              </ion-item>
+            </p>
+          </section>
           <div>
-            <ion-item>
-              <ion-input name="nome" type="text" placeholder="Nome" ngModel required></ion-input>
-            </ion-item>
-            <ion-item>
-              <ion-input name="matricula" type="text" placeholder="Matrícula" ngModel required></ion-input>
-            </ion-item>
-            <ion-item>
-              <ion-input name="turma" type="text" placeholder="Turma (Ex: CC2P12)" ngModel required></ion-input>
-            </ion-item>
-            <ion-item>
-              <ion-input name="email" type="email" placeholder="seu@email.com" ngModel required></ion-input>
-            </ion-item>
-            <ion-item>
-              <ion-input name="password" type="password" placeholder="Senha" ngModel required></ion-input>
-            </ion-item>
-            <ion-item>
-              <ion-input name="confirm" type="password" placeholder="Confirme a senha" ngModel required></ion-input>
-            </ion-item>
-          </div>
-          <div padding>
-            <ion-button type="submit" [disabled]="form.invalid" expand="block">Cadastre-se</ion-button>
+            <div padding>
+              <ion-button color="warning" type="submit" [disabled]="form.invalid" expand="block">Cadastre-se
+              </ion-button>
+            </div>
           </div>
         </ion-col>
       </ion-row>
