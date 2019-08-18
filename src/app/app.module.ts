@@ -14,13 +14,7 @@ import { AngularFireAuthModule } from "@angular/fire/auth";
 import { NgxQRCodeModule } from "ngx-qrcode2";
 
 export const firebaseConfig = {
-  apiKey: "AIzaSyCovSl4atTfqA6x3CDgn97B8ozr6EoEisc",
-  authDomain: "unipapp.firebaseapp.com",
-  databaseURL: "https://unipapp.firebaseio.com",
-  projectId: "unipapp",
-  storageBucket: "",
-  messagingSenderId: "52047596843",
-  appId: "1:52047596843:web:6e5bc4d4a8bcf213"
+  
 };
 
 @NgModule({
