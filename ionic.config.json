@@ -1,5 +1,7 @@
 {
   "name": "unip-app",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

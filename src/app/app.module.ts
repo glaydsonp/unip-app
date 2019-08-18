@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AngularFireModule } from "@angular/fire";
 import { AngularFireAuthModule } from "@angular/fire/auth";
+import { NgxQRCodeModule } from "ngx-qrcode2";
 
 export const firebaseConfig = {
   apiKey: "AIzaSyCovSl4atTfqA6x3CDgn97B8ozr6EoEisc",
@@ -30,7 +31,8 @@ export const firebaseConfig = {
     IonicModule.forRoot(), 
     AppRoutingModule,
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    NgxQRCodeModule
   ],
   providers: [
     StatusBar,
